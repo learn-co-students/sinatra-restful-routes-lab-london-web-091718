@@ -10,7 +10,7 @@ gem 'rake'
 gem 'require_all'
 gem 'shotgun'
 gem 'json'
-
+gem 'pry'
 group :test do
   gem 'rspec'
   gem 'pry'
@@ -19,3 +19,11 @@ group :test do
   gem 'rack-test'
   gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
 end
+
+gem 'sinatra'
+gem 'pry-nav'
+gem 'rake'
+gem 'rspec'
+gem 'rack-test'
+gem 'database_cleaner', git: 'https://github.com/bmabey/database_cleaner.git'
+gem 'require_all'
