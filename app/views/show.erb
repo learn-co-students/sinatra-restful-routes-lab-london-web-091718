@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%=@recipe.name%></title>
+</head>
+<body>
+  <div class="recipe">
+    <h3><%=@recipe.name%></h3>
+    <p>Ingredients: <%=@recipe.ingredients%></p>
+    <p>Cook Time: <%=@recipe.cook_time%></p>
+    <a href="/recipes/<%=@recipe.id%>/edit">edit</a>
+    <form method="post" action="/recipes/<%= @recipe.id %>/delete">
+      <input id="hidden" type="hidden" name="_method" value="delete">
+      <input type="submit" value="delete">
+    </form>
+    <br>
+    <br>
+    <br>
+    <a href="/recipes">View all Recipes</a>
+  </div>
+</body>
+</html>
